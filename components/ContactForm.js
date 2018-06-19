@@ -1,4 +1,4 @@
-var ContactForm = eact.createClass({
+var ContactForm = React.createClass({
   propTypes: {
     contact: React.PropTypes.object.isRequired
   },
@@ -11,7 +11,7 @@ var ContactForm = eact.createClass({
           placeholder: 'Imię',
           value: this.props.contact.firstName,
         }),
-        Reac.createElement('input', {
+        React.createElement('input', {
           type: 'text',
           placeholder: 'Nazwisko',
           value: this.props.contact.lastName,

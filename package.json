@@ -20,7 +20,10 @@
   },
   "scripts": {
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "go-live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js *.js"
+    "go-live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js *.js",
+    "init:sass": "node-sass --output-style nested --source-map true -o css sass --watch",
+    "dev": "npm-run-all -p init:sass go-live"
+
   },
   "repository": {
     "type": "git",
