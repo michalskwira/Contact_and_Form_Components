@@ -11,13 +11,23 @@ html {
     flex-direction: column;
 }
 
-img.contactImage {
-    max-width: 41px;
-} 
-
 ul.contactsList {
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
+    .contactItem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img.contactImage {
+            width:50px;
+        }
+        .contactLabel {
+            display: block;
+            width:400px;
+            margin: 2px;
+            height: 30px;
+        }
+    }
 }
 
 
